@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <title>elkangaroo | jumping through the night since 1985</title>
         <link rel="stylesheet" href="css/minimal.css">
-        <link rel="stylesheet" href="//vjs.zencdn.net/4.2/video-js.css">
-        <script src="//vjs.zencdn.net/4.2/video.js"></script>
+        <link rel="stylesheet" href="css/videojs-sublime-skin.min.css">
+        <link rel="stylesheet" href="//vjs.zencdn.net/4.12/video-js.css">
+        <script src="//vjs.zencdn.net/4.12/video.js"></script>
     </head>
 
     <body>
@@ -27,12 +28,15 @@
 
             <section>
                 <h2 id="section-video">video</h2>
-                <p>
-                    <video id="video-charlie-sheeplin" class="video-js vjs-default-skin"
-                           controls preload="metadata" poster="img/charlie_sheeplin.jpg" width="500" height="288">
-                        <source src="video/charlie_sheeplin.webm" type='video/webm'>
-                    </video>
-                </p>
+                <video id="video-charlie-sheeplin" class="video-js vjs-sublime-skin" width="500" height="288"
+                    controls preload="none" poster="img/charlie_sheeplin.jpg" data-setup='{}'>
+                    <source src="video/charlie_sheeplin.webm" type="video/webm">
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that 
+                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>.
+                    </p>
+                </video>
+                <br>
                 <blockquote>
                     <p>
                         <b>Charlie Sheeplin</b>:
