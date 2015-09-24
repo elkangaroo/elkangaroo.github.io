@@ -1,104 +1,166 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>elkangaroo | jumping through the night since 1985</title>
-        <link rel="stylesheet" href="css/minimal.css">
-        <link rel="stylesheet" href="css/videojs-sublime-skin.min.css">
-        <link rel="stylesheet" href="//vjs.zencdn.net/4.12/video-js.css">
-        <script src="//vjs.zencdn.net/4.12/video.js"></script>
-    </head>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>elkangaroo | jumping through the night since 1985</title>
 
-    <body>
-        <div class="wrapper">
-            <header>
-                <h1>@elkangaroo</h1>
-                <p>jumping through the night since 1985</p>
-                <p class="view">
-                    <a href="https://github.com/elkangaroo/elkangaroo.github.io">
-                        View the Project on GitHub <small>elkangaroo/elkangaroo.github.io</small>
-                    </a>
-                </p>
-                <ul>
-                    <li><a href="#section-video">Watch <strong>video</strong></a></li>
-                    <li><a href="#section-websites">Visit <strong>websites</strong></a></li>
-                    <li><a href="#section-games">Play <strong>games</strong></a></li>
-                </ul>
-            </header>
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media-queries.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/retina.js"></script>
+  <script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+  <script type="text/javascript">
+    $.backstretch("img/bg7.jpg");
+  </script>
 
-            <section>
-                <h2 id="section-video">video</h2>
-                <video id="video-charlie-sheeplin" class="video-js vjs-sublime-skin" width="500" height="288"
-                    controls preload="none" poster="img/charlie_sheeplin.jpg" data-setup='{}'>
-                    <source src="video/charlie_sheeplin.webm" type="video/webm">
-                    <p class="vjs-no-js">
-                        To view this video please enable JavaScript, and consider upgrading to a web browser that 
-                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>.
-                    </p>
-                </video>
-                <br>
-                <blockquote>
-                    <p>
-                        <b>Charlie Sheeplin</b>:
-                        Winner of the One Minute Award (category: U20) at <a href="http://www.oneminutes.tv/">One Minute Film & Video Festival Aarau</a>, Swiss (2008)
-                    </p>
-                </blockquote>
+  <link rel="stylesheet" href="css/videojs-sublime-skin.min.css">
+  <link rel="stylesheet" href="https://vjs.zencdn.net/4.12/video-js.css">
+  <script src="https://vjs.zencdn.net/4.12/video.js"></script>
+</head>
+<body>
+  <div class="scanlines"></div>
+  
+  <div class="header-wrapper opacity">
+    <div class="header">&nbsp;</div>
+  </div>
 
-                <h2 id="section-websites">websites</h2>
-                <h3>what's that game?</h3>
-                <blockquote>
-                    <p>
-                        The great video game screenshot quiz; online at <a href="http://whatsthatgame.net/">whatsthatgame.net</a>; closed source.
-                    </p>
-                    <p>
-                        Technologies:<br>PHP 5.4, PostgreSQL 9.4, HTML 5, jQuery
-                    </p>
-                </blockquote>
+  <div class="wrapper">
+    <div class="intro">
+      elkangaroo - jumping through the night since 1985
+    </div>
+    <ul class="social">
+      <li><a class="twitter" href="https://twitter.com/elkangaroo"></a></li>
+      <li><a class="google" href="https://github.com/elkangaroo"></a></li>
+    </ul>
 
-                <h3>alexanderwenzel.net</h3>
-                <blockquote>
-                    <p>
-                        Just my web business card; online at <a href="http://alexanderwenzel.net/">alexanderwenzel.net</a>; sources at <a href="https://github.com/elkangaroo/alexanderwenzel.net">elkangaroo/alexanderwenzel.net</a>.
-                    </p>
-                    <p>
-                        Technologies:<br>HTML5
-                    </p>
-                </blockquote>
-
-                <h3>[german] dragons of martial arts</h3>
-                <blockquote>
-                    <p>
-                        Website of the online gaming clan [g-doma]; offline; closed source.
-                    </p>
-                    <p>
-                        Technologies:<br>PHP 5.3, HTML 4, MySQL
-                    </p>
-                </blockquote>
-
-                <hr/>
-
-                <h2 id="section-games">games</h2>
-
-                <hr/>
-
-                <h2 id="section-software">other software</h2>
-            </section>
-
-            <footer>
-                <p>
-                    This site is maintained by <a href="https://github.com/elkangaroo">Alexander Wenzel</a>
-
-                    <small>
-                        This site is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">
-                        Creative Commons Attribution 4.0 International License</a>.
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
-                    </small>
-                </p>
-            </footer>
+  <!-- Begin Blog Grid -->
+  <div class="blog-wrap">
+    <div class="blog-grid">
+      <div class="post format-video box"> 
+        <div class="video frame">
+          <video id="video-charlie-sheeplin" class="video-js vjs-sublime-skin" width="500" height="288" controls preload="none" poster="img/preview/charlie-sheeplin.jpg" data-setup='{}'>
+              <source src="video/charlie_sheeplin.webm" type="video/webm">
+              <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that 
+                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>.
+              </p>
+          </video>
         </div>
-    </body>
+        <h2 class="title">Charlie Sheeplin</h2>
+        <p>
+          Winner of the One Minute Award (category: U20) at 
+          <a href="http://www.oneminutes.tv/">One Minute Film & Video Festival Aarau</a>, Swiss (2008)
+        </p>
+        <div class="details">
+          <span class="icon-date">2008</span>
+        </div>
+      </div>
+
+      <div class="post format-image box"> 
+        <div class="frame">
+          <a href="#">
+            <img src="img/preview/wtg.png" alt="" />
+          </a>
+        </div>
+        <h2 class="title"><a href="http://whatsthatgame.net">what's that game?</a></h2>
+        <p>
+          The great video game screenshot quiz.<br>
+          Technologies: PHP 5.4, PostgreSQL 9.4, HTML 5, jQuery
+        </p>
+        <div class="details">
+          <span class="icon-date">2009 - today</span>
+          <span class="link"><a href="http://whatsthatgame.net">whatsthatgame.net</a></span>
+        </div>
+      </div>
+
+      <div class="post format-image box"> 
+        <div class="frame">
+          <a href="#">
+            <img src="img/preview/tweitm.jpg" alt="" />
+          </a>
+        </div>
+        <h2 class="title"><a href="https://github.com/redien/TWEITM">TWEITM</a></h2>
+        <p>
+          The world ends in 2 minutes.<br>
+          Game made for the Berlin August Mini Game Jam. 
+          Using LÖVE, the awesome 2d game framwork for Lua.
+          Using the Animations And Love library for animations.
+        </p>
+        <div class="details">
+          <span class="icon-date">2013</span>
+          <span class="link"><a href="https://github.com/redien/TWEITM">github.com/redien/TWEITM</a></span>
+        </div>
+      </div>
+
+      <div class="post format-image box"> 
+        <div class="frame">
+          <a href="#">
+            <img src="img/preview/snakelike.jpg" alt="" />
+          </a>
+        </div>
+        <h2 class="title"><a href="https://github.com/elkangaroo/snakelike.love">snakelive.love</a></h2>
+        <p>
+          A simple snake like game written in lua using the löve 2d games framework.<br>
+          First contact with lua and löve.
+        </p>
+        <div class="details">
+          <span class="icon-date">2013</span>
+          <span class="link"><a href="https://github.com/elkangaroo/snakelike.love">github.com/elkangaroo/snakelike.love</a></span>
+        </div>
+      </div>
+
+      <div class="post format-image box"> 
+        <div class="frame">
+          <a href="#">
+            <img src="img/preview/gol3d.jpg" alt="" />
+          </a>
+        </div>
+        <h2 class="title"><a href="http://sf.net/projects/gol3d/">Game of Life 3D</a></h2>
+        <p>
+          Game of Life 3D is an platform-independent OpenGL implementation of John Conway's Game of Life with a modern QT4 user interface. 
+          It features a random mode and different pre defined example modes.
+        </p>
+        <div class="details">
+          <span class="icon-date">2009</span>
+          <span class="link"><a href="http://sf.net/projects/gol3d/">sf.net/projects/gol3d</a></span>
+        </div>
+      </div>
+   
+      <!-- Begin Quote Format -->
+      <div class="post format-quote box"> 
+        <blockquote>Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.<cite>Sheldon Cooper</cite></blockquote>  
+        <div class="details">
+          <span class="icon-date">2012</span>
+        </div>
+    
+      </div>
+      <!-- End Quote Format -->
+     </div>
+  </div>
+  </div>
+
+  <div class="footer-wrapper">
+    <div id="footer" class="one">
+      <div class="widget-area">
+        <div class="widget">
+          <h3 class="widget-title">About</h3>
+          <div>
+            This site is hosted on GitHub Pages 
+            (<a href="https://github.com/elkangaroo/elkangaroo.github.io" class="lite1">view project</a>).
+            <br>
+            This site is licensed under the 
+            <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+            <br><br>
+            Design by <a href="http://elemisfreebies.com">elemis</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
 </html>
