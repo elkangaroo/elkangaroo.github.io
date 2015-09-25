@@ -661,7 +661,8 @@ img {
     display: block;
     max-width: 100%;
 }
-.frame img {
+.frame img,
+.frame video {
     display: block;
     max-width: 100%;
     pointer-events: auto;
