@@ -727,6 +727,9 @@ blockquote cite:before {
 /*-----------------------------------------------------------------------------------*/
 /*  VIDEO
 /*-----------------------------------------------------------------------------------*/
+.frame .vjs-has-started {
+  z-index: 1;
+}
 .frame .vjs-default-skin .vjs-big-play-button {
   background: rgba(220,20,20,0.7);
   border: none;
