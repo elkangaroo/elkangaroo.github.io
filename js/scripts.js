@@ -43,19 +43,3 @@ jQuery(document).ready(function($) {
     $(this).stop().animate({ opacity: 1.0 }, "fast");
   });
 });
-
-/*-----------------------------------------------------------------------------------*/
-/*	IMAGE HOVER
-/*-----------------------------------------------------------------------------------*/		
-
-jQuery(document).ready(function($) {
-  $('.frame a').prepend('<span class="more"></span>');
-});
-
-jQuery(document).ready(function($) {
-  $('.frame').mouseenter(function(e) {
-    $(this).children('a').children('span').fadeIn(300);
-  }).mouseleave(function(e) {
-    $(this).children('a').children('span').fadeOut(200);
-  });
-});

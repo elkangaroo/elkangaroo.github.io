@@ -655,7 +655,6 @@ hr {
 .frame {
   display: block;
   position: relative;
-  pointer-events: none;
 }
 img {
   display: block;
@@ -665,11 +664,9 @@ img {
 .frame video {
   display: block;
   max-width: 100%;
-  pointer-events: auto;
 }
 iframe {
   display: block;
-  pointer-events: auto;
 }
 .frame:before {
   content: '';
@@ -837,41 +834,6 @@ iframe {
 .error404 .searchform,
 .blog-grid .post.not-found .searchform {
   max-width: 200px
-}
-/* =Single
------------------------------------------------ */
-.single .post .details {
-  margin-top: -20px;
-  margin-bottom: 20px;
-}
-.single .tags {
-  padding-bottom: 20px
-}
-.single .tags a:before {
-  content: "#";
-  display: inline-block;
-}
-ul.single-gallery {
-  list-style: none;
-  margin-bottom: 50px;
-}
-ul.single-gallery li {
-  margin-bottom: 40px
-}
-ul.single-gallery li p {
-  margin-top: 40px
-}
-ul.single-gallery li .frame {
-  margin: -20px -20px -20px -20px
-}
-#gallery-1 img {
-  border: none !important
-}
-.single .audio-wrapper {
-  width: 630px
-}
-.single .audio {
-  width: 475px
 }
 /* =Quote
 ----------------------------------------------- */
