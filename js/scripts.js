@@ -1,47 +1,15 @@
-
-
 /*-----------------------------------------------------------------------------------*/
 /*	POSTS GRID
 /*-----------------------------------------------------------------------------------*/ 
 $(window).load(function() {
-  var $container = $('.blog-grid');
-  var gutter = 30;
-  var min_width = 345;
-  $container.imagesLoaded(function() {
+  var $container = $('.blog-grid').imagesLoaded(function() {
     $container.masonry({
       itemSelector: '.post',
-      gutterWidth: gutter,
-      isAnimated: true,
-      columnWidth: function(containerWidth) {
-        var box_width = (((containerWidth - gutter)/2) | 0);
-  
-        if (box_width < min_width) {
-          box_width = (((containerWidth - gutter)/2) | 0);
-        }
-  
-        if (box_width < min_width) {
-          box_width = containerWidth;
-        }
-  
-        $('.post').width(box_width);
-  
-        return box_width;
-      }
+      columnWidth: '.post-sizer',
+      gutter: '.gutter-sizer',
+      percentPosition: true
     });
 
     $container.css('visibility', 'visible');
-  });
-});
-
-/*-----------------------------------------------------------------------------------*/
-/*	BUTTON HOVER
-/*-----------------------------------------------------------------------------------*/
-
-jQuery(document).ready(function($) {
-  $("a.button, .forms fieldset .btn-submit, #commentform input#submit").css("opacity","1.0");
-  $("a.button, .forms fieldset .btn-submit, #commentform input#submit").hover(function() {
-    $(this).stop().animate({ opacity: 0.85 }, "fast");
-  }, function() {
-    $(this).stop().animate({ opacity: 1.0 }, "fast");
   });
 });
