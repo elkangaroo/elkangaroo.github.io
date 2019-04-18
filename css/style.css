@@ -101,7 +101,7 @@ input[type="submit"]:focus, input[type="button"]:focus {
 }
 .sticky,
 .gallery-caption,
-.wp-caption, 
+.wp-caption,
 .bypostauthor,
 .wp-caption-text {}
 /*-----------------------------------------------------------------------------------*/
@@ -665,14 +665,16 @@ blockquote cite:before {
   display: inline;
   margin: 0 2px;
 }
-.social .fa {
+.social svg {
+  display: inline-block;
   color: #fff;
-  font-size: 32px;
+  width: 32px;
+  height: 32px;
   -webkit-transition: none 200ms ease-in;
   -o-transition: none 200ms ease-in;
   -moz-transition: none 200ms ease-in;
 }
-.social .fa:hover {
+.social svg:hover {
   color: #4099ff;
 }
 /*-----------------------------------------------------------------------------------*/
