@@ -313,9 +313,6 @@ hr {
   font-weight: 300;
   font-style: italic;
 }
-.blog-grid {
-  visibility: visible;
-}
 .outer {
   display: inline-block;
   zoom: 1;
