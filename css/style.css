@@ -314,7 +314,7 @@ hr {
   font-style: italic;
 }
 .blog-grid {
-  visibility: hidden
+  visibility: visible;
 }
 .outer {
   display: inline-block;
@@ -693,7 +693,7 @@ blockquote cite:before {
 /*-----------------------------------------------------------------------------------*/
 /*  VIDEO
 /*-----------------------------------------------------------------------------------*/
-.frame .vjs-has-started {
+.frame .video-js {
   z-index: 1;
 }
 .frame .vjs-default-skin .vjs-big-play-button {
@@ -708,6 +708,21 @@ blockquote cite:before {
 }
 .frame .vjs-default-skin .vjs-control-bar {
   background-color: transparent;
+}
+/*-----------------------------------------------------------------------------------*/
+/*  BACKGROUND IMAGES
+/*-----------------------------------------------------------------------------------*/
+body {
+  background-image: url('../img/bg-nikko.jpg'), url('../img/bg-tokyo.jpg'), url('../img/bg-nepal.jpg'); /* workaround for flickering animation */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  animation: cycleBackground 40s ease-in 0s infinite backwards;
+}
+@keyframes cycleBackground {
+   0%, 100% { background-image: url('../img/bg-nikko.jpg'); }
+   33% { background-image: url('../img/bg-tokyo.jpg'); }
+   66% { background-image: url('../img/bg-nepal.jpg'); }
 }
 /*-----------------------------------------------------------------------------------*/
 /*  FONTS
